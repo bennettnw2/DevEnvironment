@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+
 " Test to see if this changes the linked file on the other side
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -41,7 +42,16 @@ Plugin 'Yggdroot/indentLine'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+" ============================================
 
+" Set leader to comma
+let mapleader = ","
+
+" Toggle highlighting of search results
+nnoremap <leader><space> :nohlsearch<cr>
+
+set ttyfast " helps with screen redraws smoothness
+set title   " set the title of the window to be the name of the file
 
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
