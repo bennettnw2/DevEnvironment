@@ -50,6 +50,9 @@ let mapleader = "H"
 " Toggle highlighting of search results
 nnoremap <leader><space> :nohlsearch<cr>
 
+" Automatic Spell Correction
+nnoremap <leader><s> !z=
+
 set ttyfast " helps with screen redraws smoothness
 set title   " set the title of the window to be the name of the file
 
@@ -84,7 +87,7 @@ set shiftwidth=2
 colorscheme relaxedgreen
 syntax on
 
-" set colorcolumn=100   " setting end point
+set colorcolumn=90   " setting end point
 
 set hlsearch            " highlight matches; turn off with :nohlsearch when done searching 
 set incsearch           " search as characters are entered
