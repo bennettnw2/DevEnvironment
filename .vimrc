@@ -45,7 +45,7 @@ call vundle#end()            " required
 " ============================================
 
 " Set leader to comma
-let mapleader = ","
+let mapleader = "H"
 
 " Toggle highlighting of search results
 nnoremap <leader><space> :nohlsearch<cr>
