@@ -44,7 +44,7 @@ Plugin 'Yggdroot/indentLine'
 call vundle#end()            " required
 " ============================================
 
-" Set leader to comma
+" Set leader key to H
 let mapleader = "H"
 
 " Toggle highlighting of search results
