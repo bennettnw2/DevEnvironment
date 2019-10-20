@@ -92,6 +92,7 @@ set colorcolumn=90   " setting end point
 set hlsearch            " highlight matches; turn off with :nohlsearch when done searching 
 set incsearch           " search as characters are entered
 set linebreak           " set linebreak on so that full words are wrapped
+set laststatus=2        " set the title of the vim window to show the filename
 
 " Plugin Configurations 
 let g:auto_save = 1  " enable AutoSave on Vim startup
