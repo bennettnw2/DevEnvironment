@@ -38,20 +38,27 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'https://github.com/907th/vim-auto-save'
 Plugin 'https://github.com/tkhren/vim-fake'
 Plugin 'Yggdroot/indentLine'
+Plugin 'scrooloose/nerdtree'
 " Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 " ============================================
 
-" Set leader key to H
+" Set leader to comma
 let mapleader = "H"
 
 " Toggle highlighting of search results
 nnoremap <leader><space> :nohlsearch<cr>
 
+" Toggle NERDTree
+nnoremap <leader>n :NERDTreeToggle<cr>
+
+" Toggle Hybrid Line Numbers
+nnoremap <leader>m :set number! relativenumber!<cr>
+
 " Automatic Spell Correction
-nnoremap <leader><s> !z=
+nnoremap <leader>s 1z=
 
 set ttyfast " helps with screen redraws smoothness
 set title   " set the title of the window to be the name of the file
@@ -87,7 +94,7 @@ set shiftwidth=2
 colorscheme relaxedgreen
 syntax on
 
-set colorcolumn=90   " setting end point
+" set colorcolumn=90   " setting end point
 
 set hlsearch            " highlight matches; turn off with :nohlsearch when done searching 
 set incsearch           " search as characters are entered
@@ -107,6 +114,10 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " let g:loaded_matchparen=1
 
 " Abbreviations (TextExpanders)
+
+" +++ HTML +++
+iab br <BR>
+
 " +++ EJS +++
 iab {{ ({<CR><CR>})<Up><Left><TAB>
 iab ejs <% %><Left><Left><Left>
