@@ -158,3 +158,4 @@ exit
 # DONE - change urls for all these config files
 # configure vim plugins to work automagically
 # configure to set timezone itself
+# create list of system settings and chrony timers that I like
