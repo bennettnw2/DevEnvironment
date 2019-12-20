@@ -6,5 +6,13 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
+HISTCONTROL=ignorespace:erasedups
+export PATH=$PATH:$HOME/.local/bin
+export EDITOR="vim"
 
-export PATH=$HOME/.local/bin:$HOME/bin:$PATH
+# Color LS output to differentiate between directories and files
+export LS_OPTIONS="--color=auto"
+export CLICOLOR="Yes"
+export LSCOLOR=""
+
+export PS1=$'___________________ \h | \u \w \n$ '
