@@ -156,6 +156,9 @@ exit
     # DONE - .bash_profile 
     # DONE - .tmux.conf 
 # DONE - change urls for all these config files
-# configure vim plugins to work automagically
+# configure vim plugins to work automagically - maybe not since I am always on the east coast
 # configure to set timezone itself
 # create list of system settings and chrony timers that I like
+#   * configure to set and use ntpd
+#   * configure to use syslog and maybe create a logging server that I get all info from from all my servers
+#       * would need to configure a logging server first....
