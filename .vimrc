@@ -81,6 +81,13 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " ============================================
 
 " ============================================
+" SET INTIAL SETTINGS
+" ============================================
+set number
+set relativenumber
+set spell
+
+" ============================================
 " LEADER KEY 'H' SHORTCUTS
 " ============================================
 " Set leader to comma
